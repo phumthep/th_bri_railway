@@ -286,7 +286,7 @@ for k in node_map.keys():
     node2abbre[k] = abbre_mapping[node_map[k]]
     
 # Create a graph object from adjmat
-G = nx.from_numpy_matrix(adjmat.values)
+G = nx.from_numpy_array(adjmat.values)
 
 # Plot the network graph
 from bri_util import plot_network
